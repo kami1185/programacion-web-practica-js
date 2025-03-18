@@ -1,0 +1,63 @@
+.container-flex{
+    /* display: this defines a flex container; inline or block depending on the given value. 
+    It enables a flex context for all its direct children. */
+    display: flex;
+    /* flex-direction: this establishes the main-axis, thus defining the direction flex items are placed in the flex container.  */
+    flex-direction: row;
+    /* flex-wrap: by default, flex items will all try to fit onto one line. */
+    flex-wrap: wrap;
+    /* This is a shorthand for the flex-direction and flex-wrap properties, which together define the flex container’s main and cross axes. */
+    /* flex-flow: column wrap; */
+
+    /* justify-content: this defines the alignment along the main axis. It helps distribute extra free space leftover 
+    when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. */
+    justify-content: center;
+
+    align-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+    background-color: rgb(235, 236, 238);
+    padding: 2rem;
+
+}
+
+.cardFlexbox{
+    color: black;
+    /* width: 200px; */
+    text-align: center;
+    line-height: 100px;
+    font-size: 50px;
+    background: darkcyan;
+    flex: 1 1 200px;
+    /* order: 5;
+    flex-grow: 2;
+    flex-shrink: 3;
+    flex-basis: auto; */
+}
+
+/* Modificando propiedades específicas para algunas cards */
+.cardFlexbox:nth-child(3) {
+    order: 1; /* Moverá esta card al final */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 250px;
+}
+
+.cardFlexbox:nth-child(5) {
+    order: -1; /* Moverá esta card al principio */
+    flex-grow: 2; /* Crecerá el doble que las demás */
+    flex-shrink: 0.5;
+}
+
+.cardFlexbox:nth-child(7) {
+    flex-shrink: 0; /* No se encogerá */
+    flex-basis: 300px;
+}
+
+.cardFlexbox:nth-child(10) {
+    order: 2;
+    flex-grow: 3;
+    flex-basis: 350px;
+}

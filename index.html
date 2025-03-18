@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Vite App</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/css/flexbox.css">
+    <link rel="stylesheet" href="./src/css/cssGrid.css">
+  </head>
+  <body>
+    <header class="header">
+      <h1>🌍 Pasto Food</h1>
+      <nav class="navbar">
+          <ul>
+              <li class="inicio"><a href="#inicio" >Inicio</a></li>
+              <li class="restaurante"><a href="#restaurantes">Restaurantes</a></li>
+              <li class="blog"><a href="#blog" >Blog</a></li>
+              <li class="contacto"><a href="#contacto" >Contacto</a></li>
+          </ul>
+          
+      </nav>
+    </header>
+    <!-- Contenido principal -->
+    <main class="main-content">
+      <!-- Artículo destacado -->
+      <article class="post">
+
+        <section>
+          <input type="checkbox" name="" id="">
+        </section>
+
+        <section>
+          <h2>Event Loop Ejemplo 1</h2>
+          <button onclick="task1()">Ejemplo 1</button>
+          <!-- <button onclick="showdata2()">show data</button> -->
+          <ul id="listTasks"></ul>
+        </section>
+
+        <section>
+          <h2>Event Loop Ejemplo 2</h2>
+          <button id="taks2">Ejemplo 1</button>
+          <button onclick="showdata2()">show data</button>
+          <ul id="listTasks"></ul>
+        </section>
+
+
+        <section>
+          <h2>FLEXBOX</h2>
+          <div class="container-flex">
+            <div class="cardFlexbox">card 1</div>
+            <div class="cardFlexbox">card 2</div>
+            <div class="cardFlexbox">card 3</div>
+            <div class="cardFlexbox">card 4</div>
+            <div class="cardFlexbox">card 5</div>
+            <div class="cardFlexbox">card 6</div>
+            <div class="cardFlexbox">card 7</div>
+            <div class="cardFlexbox">card 8</div>
+            <div class="cardFlexbox">card 9</div>
+            <div class="cardFlexbox">card 10</div>
+            <div class="cardFlexbox">card 11</div>
+            <div class="cardFlexbox">card 12</div>
+            <div class="cardFlexbox">card 13</div>
+          </div>
+        </section>
+
+        <section>
+          <h2>CSS GRID</h2>
+          <div class="container-grid">
+            <div class="cardGrid">card 1</div>
+            <div class="cardGrid">card 2</div>
+            <div class="cardGrid">card 3</div>
+            <div class="cardGrid">card 4</div>
+            <div class="cardGrid">card 5</div>
+            <div class="cardGrid">card 6</div>
+            <div class="cardGrid">card 7</div>
+            <div class="cardGrid">card 8</div>
+            <div class="cardGrid">card 9</div>
+            <div class="cardGrid">card 10</div>
+            <div class="cardGrid">card 11</div>
+            <div class="cardGrid">card 12</div>
+            <div class="cardGrid">card 13</div>
+          </div>
+        </section>
+
+        <section class="post-section">
+          <h3>Pasto: La Ciudad gastronomica</h3>
+          <img src="" alt="Vista panorámica de Pasto de noche" width="600">
+          <p>Pasto combina tradición y modernidad...</p>
+        </section>
+
+        
+        <section class="post-section">
+          <h3>Consejos Prácticos</h3>
+          <ul>
+            <li>Transporte: Usa uber o taxi.</li>
+            <li>Lugares de interes: Centro, Cuadras, Avenida...</li>
+          </ul>
+        </section>
+        
+        <section class="post-section">
+          <audio controls muted>
+            <source src="./src/resources/Alesso Vs OneRepublic - If I Lose Myself (Alesso Remix).mp3" type="audio/mpeg">
+            Tu navegador no soporta la etiqueta de audio.
+          </audio>
+          <video width="640" height="360" controls>
+            <source src="./src/resources/video.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+          </video>
+          
+          <h2>Ejemplo de Geolocalización con HTML5</h2>
+          <button onclick="obtenerUbicacion()">Obtener mi ubicación</button>
+          <div id="resultado"></div>
+          
+          <dialog id="miDialogo">
+            <!-- <h2>¿Confirmar acción?</h2>
+            <p>¿Estás seguro de eliminar este elemento?</p> -->
+            <template id="card-template">
+              <div class="card">
+                <h2 class="title"></h2>
+                <p class="content"></p>
+              </div>
+            </template>
+            <div id="clone-block2"></div>
+            <button onclick="document.getElementById('miDialogo').close()">Cancelar</button>
+            <button onclick="eliminarElemento()">Aceptar</button>
+          </dialog>
+          
+          <button onclick="document.getElementById('miDialogo').showModal()">Abrir diálogo</button>
+          
+        </section>
+        
+        <section>
+          <h2>Formulario</h2>
+          <form id="myForm">
+            <input type="text" id="nombre" placeholder="Nombre">
+            <input type="email" id="email" placeholder="Email">
+            <button type="submit">Enviar</button>
+          </form>
+          <button id="btnFetch">Enviar datos</button>
+          
+          <div id="response"></div>
+        </section>
+
+        <section>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./src/images/nombreimage.webps">
+            <source media="(min-width: 768px)" srcset="imagen-mediana.jpg">
+            <!-- <img src="imagen-pequeña.jpg" alt="Descripción"> -->
+          </picture>
+        </section>
+
+        <section> 
+          <h3>template</h3>         
+          <template id="card-template">
+            <div class="card">
+              <h2 class="title"></h2>
+              <p class="content"></p>
+            </div>
+          </template>
+          <div id="clone-block"></div>
+        </section>
+
+        <section>
+          <h3>datalist</h3>
+          <label>Elige un lenguaje de programación:</label>
+          <input list="lenguajes">
+          <datalist id="lenguajes">
+            <option value="JavaScript">
+            <option value="Python">
+            <option value=".net">
+            <option value="node">
+            <option value="JavaScript">
+          </datalist>
+        </section>
+
+        <section>
+          <h3>output</h3>
+          <form oninput="resultado.value = parseInt(num1.value) + parseInt(num2.value)">
+            <input type="number" id="num1" value="0">
+            + <input type="number" id="num2" value="0">
+            = <output name="resultado">0</output>
+          </form>
+          <form oninput="resultado.value = parseInt(num1.value) * parseInt(num2.value)">
+            <input type="number" id="num1" value="0">
+            * <input type="number" id="num2" value="0">
+            = <output name="resultado">0</output>
+          </form>
+        </section>
+
+        <section>
+          <h3>meter</h3>
+          <meter 
+            min="0" 
+            max="100" 
+            value="90"
+            low="30" 
+            high="80">
+          </meter>
+        </section>
+
+        <section>
+          <h3>figure y figcaption</h3>
+          <figure>
+            <!-- <img src="grafico.png" alt="Crecimiento de usuarios"> -->
+            <figcaption>Gráfico de crecimiento anual (2023-2024)</figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h3>canvas:</h3>
+          <canvas id="miCanvas" width="400" height="200"></canvas>
+          <script>
+            const canvas = document.getElementById('miCanvas');
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = "blue";
+            ctx.fillRect(10, 10, 150, 100); // Dibuja un rectángulo
+          </script>
+        </section>
+   
+      </article>
+
+      <!-- Barra lateral (contenido relacionado) -->
+      <aside class="sidebar">
+          <p>En este texto, se resaltan <mark>Restaurantes Populares</mark> de pasto:</p>
+
+          <details open>
+            <ul>
+              <li><a href="https://lnk.bio/BeefMaster">Beef</a></li>
+              <li><a href="https://lamerced.com.co/">Merced</a></li>
+            </ul>
+          </details>
+
+          <progress value="50" max="100"></progress>
+          <!-- Usando JavaScript -->
+          <progress id="carga" max="90"></progress>
+          <script>
+            document.getElementById('carga').value = 70;
+          </script>
+
+          <h3>Proximos Eventos:</h3>
+          <p>El evento será el <time datetime="2025-02-25T20:00">25 de Febrero a las 8 PM</time>.</p>
+
+
+          <search>
+            <form action="/buscar" method="get">
+              <label for="query">Buscar:</label>
+              <input type="text" id="query" name="q" placeholder="Escribe aquí...">
+              <button type="submit">Buscar</button>
+            </form>
+          </search>
+
+          <div class="div-content">
+            <div><p>1</p></div>
+          <div><p>1</p></div>
+          <div><p>1</p></div>
+          <div><p>1</p></div>
+          <div><p>1</p></div>
+          </div>
+          
+
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <p>© 2025 Guia de comida callejera. Todos los derechos reservados.</p>
+        <address>Contacto: <a href="mailto:info@food.com">info@food.com</a></address>
+      </div>
+    </footer>
+    <script src="./src/scripts/Eventloop.js" defer></script>
+    <script src="./src/scripts/garbageCollection.js" defer></script>
+    <script src="./src/main.js" defer></script>
+    <script src="./src/scripts/geolocalizacion.js" defer></script>
+    <script src="./src/scripts/fetchData.js" defer></script>
+    <script src="./src/scripts/http.js" defer></script>
+
+  </body>
+</html>
