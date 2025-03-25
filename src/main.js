@@ -25,11 +25,6 @@ const template = document.getElementById('card-template');
 // }, 3000);
 // console.log('JSConEU');
 
-const template = document.getElementById('card-template');
-  const clone = template.content.cloneNode(true);
-  clone.querySelector('.title').textContent = "TITULOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO";
-  clone.querySelector('.content').textContent = "Deseas salir de la app";
-  document.getElementById('clone-block2').appendChild(clone);
 
 //   const checkbox = document.querySelector("input[type=checkbox]");
 //   if (checkbox.value == true) { // Peligro: "on" == true → "on" == 1 → NaN == 1 → false

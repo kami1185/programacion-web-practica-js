@@ -17,11 +17,11 @@
 // EVENT LOOP:
 
 // **************************ejemplo 1
-console.log('Hi');
-setTimeout(function cb(){
-    console.log('there');
-}, 3000);
-console.log('JSConEU');
+// console.log('Hi');
+// setTimeout(function cb(){
+//     console.log('there');
+// }, 3000);
+// console.log('JSConEU');
 
 // ***************************ejemplo 2
 const task1 = () => {
