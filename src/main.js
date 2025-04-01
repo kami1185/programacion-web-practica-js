@@ -45,23 +45,23 @@ const template = document.getElementById('card-template');
 //     console.log("Edad válida");
 //   }
 
-// //   1. Comparación de arrays
-// // Error común: Esperar que compare contenido
+//   1. Comparación de arrays
+// Error común: Esperar que compare contenido
 // const frutas1 = ["🍎", "🍌"];
 // const frutas2 = ["🍎", "🍌"];
 // console.log('Comparando dos arrays con 2 referencias a memoria distintas: ', frutas1 === frutas2); // false (arrays diferentes en memoria)
 
-// // Caso correcto: Comparar referencias
+// Caso correcto: Comparar referencias
 // const listaOriginal = [1, 2, 3];
 // const copiaLista = listaOriginal;
-// console.log('Comparando dos arrays con misma referencia a memoria: ',listaOriginal === copiaLista); // true (misma referencia)
+// console.log('Comparando dos arrays con misma referencia a memoria: ',listaOriginal == copiaLista); // true (misma referencia)
 
   
-// const miArray = [];
+const miArray = [];
 // if (miArray === []) { // Error 
 //   console.log("Está vacío");
 // }
-// Solucion:
+//Solucion:
 // if (miArray.length === 0) { 
 //   console.log("Está vacío (comparacion con length) ");
 // } 
@@ -84,9 +84,9 @@ const template = document.getElementById('card-template');
 // console.log(arr1 === arr2); // false (referencias distintas)
 // console.log(arr1 === arr1); // true (misma referencia)
 
-// // Objetos
-// const obj1 = { a: 1 };
-// const obj2 = { a: 1 };
+// Objetos
+// const arr1 = { a: 1, name: 'juan' };
+// const arr2 = { a: 1, name: 'juan' };
 // console.log(obj1 === obj2); // false (objetos distintos)
 // console.log(obj1 === obj1); // true (misma referencia)
 

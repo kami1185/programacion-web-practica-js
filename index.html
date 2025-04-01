@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./src/style.css">
     <link rel="stylesheet" href="./src/css/flexbox.css">
     <link rel="stylesheet" href="./src/css/cssGrid.css">
+    <link rel="stylesheet" href="./src/css/sytles.css">
   </head>
   <body>
     <header class="header">
@@ -30,6 +31,117 @@
 
         <section>
           <input type="checkbox" name="" id="">
+        </section>
+
+        <section>
+          <h2>EVENTOS Y METODOS PARA MANIPULACION DEL DOM</h2>
+          <div class="window">
+            <ul id="listUsers"></ul>
+            <button id="AddUser">Add List User</button>
+          </div>
+
+          <h3>Formulario Evento submit</h3>
+          <div class="window">
+            <form id="miFormulario" class="formulario">
+              <!-- Campos del formulario -->
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <span class="error" id="errorNombre"></span>
+                </div>
+        
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error" id="errorEmail"></span>
+                </div>
+        
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" minlength="8" required>
+                    <span class="error" id="errorPassword"></span>
+                </div>
+        
+                <div class="form-group">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" min="18" max="100" required>
+                    <span class="error" id="errorEdad"></span>
+                </div>
+        
+                <div class="form-group">
+                    <label for="fecha">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                    <span class="error" id="errorFecha"></span>
+                </div>
+        
+                <div class="form-group">
+                    <label for="pais">País:</label>
+                    <select id="pais" name="pais" required>
+                        <option value="">Seleccione...</option>
+                        <option value="MX">México</option>
+                        <option value="CO">Colombia</option>
+                        <option value="AR">Argentina</option>
+                    </select>
+                    <span class="error" id="errorPais"></span>
+                </div>
+        
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        Acepto los términos y condiciones
+                    </label>
+                    <span class="error" id="errorTerminos"></span>
+                </div>
+        
+                <div class="form-group">
+                    <label for="comentarios">Comentarios:</label>
+                    <textarea id="comentarios" name="comentarios" maxlength="200"></textarea>
+                    <span class="error" id="errorComentarios"></span>
+                </div>
+        
+                <button type="submit">Enviar</button>
+            </form>
+
+          </div>
+
+          <div>
+            <h2>Eventos del Mouse</h2>
+            <div class="container-flex">
+              <div class="cardFlexbox caja">Mouseover - Mouseout</div>
+            </div>
+            <div id="coordenadas">Coordenadas: (x, y)</div>
+          </div>
+
+          <h2>Drap & Drop</h2>
+            <div id="origen" class="dropzone">
+              <div id="itemArrastrable" class="draggable-item" draggable="true">
+                  ¡Arrástrame!
+              </div>
+              <div id="itemArrastrable2" class="draggable-item" draggable="true">
+                  ¡Arrástrame 2!
+              </div>
+            </div>
+            <div>
+                <h2>Destino</h2>
+                <div id="destino" class="dropzone">
+                    Suelta aquí...
+                </div>
+            </div>
+          </div>
+
+          <h2>IntersectionObserver </h2>
+          <div>
+            <div class="nodo"></div>
+            <div class="nodo"></div>
+            <div class="nodo"></div>
+          </div>
+
+          
+          <div>*************************************************************************************</div>
+        </section>
+
+        <section>
+          <h2>Metodos Array y Objectos</h2>
         </section>
 
         <section>
@@ -135,8 +247,8 @@
         <section>
           <h2>Formulario</h2>
           <form id="myForm">
-            <input type="text" id="nombre" placeholder="Nombre">
-            <input type="email" id="email" placeholder="Email">
+            <input type="text" id="Nombre" placeholder="Nombre">
+            <input type="email" id="Email" placeholder="Email">
             <button type="submit">Enviar</button>
           </form>
           <button id="btnFetch">Enviar datos</button>
@@ -183,11 +295,11 @@
             + <input type="number" id="num2" value="0">
             = <output name="resultado">0</output>
           </form>
-          <form oninput="resultado.value = parseInt(num1.value) * parseInt(num2.value)">
+          <!-- <form oninput="resultado.value = parseInt(num1.value) * parseInt(num2.value)">
             <input type="number" id="num1" value="0">
             * <input type="number" id="num2" value="0">
             = <output name="resultado">0</output>
-          </form>
+          </form> -->
         </section>
 
         <section>
@@ -272,11 +384,14 @@
     </footer>
     <script src="./src/scripts/Eventloop.js" defer></script>
     <script src="./src/scripts/this.js" defer></script>
+    <script src="./src/scripts/hoisting.js" defer></script>
     <script src="./src/main.js" defer></script>
     <script src="./src/scripts/geolocalizacion.js" defer></script>
     <script src="./src/scripts/fetchData.js" defer></script>
     <script src="./src/scripts/http.js" defer></script>
-    <script src="./src/scripts/hoisting.js" defer></script>
+    <script src="./src/scripts/DOM.js" defer></script>
+    <script src="./src/scripts/Eventos.js" defer></script>
+    <script src="./src/scripts/methods.js" defer></script>
 
   </body>
 </html>

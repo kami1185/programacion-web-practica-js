@@ -1,23 +1,23 @@
 
-console.log(this); // En navegadores: window
+// console.log(this); // En navegadores: window
 
 
 // ************************* THIS FUNCIONES NORMALES:
-    const usuario = {
-        marca: "samsung",
-        modelo: "S24 plus",
-        telefono: function() {
-        console.log(`El telefono ${this.marca} es ${this.modelo}, usando this dentro una funcion` ); // this = usuario
-        },
-    };
-    usuario.telefono();
+    // const usuario = {
+    //     marca: "samsung",
+    //     modelo: "S24 plus",
+    //     telefono: function() {
+    //     console.log(`El telefono ${this.marca} es ${this.modelo}, usando this dentro una funcion` ); // this = usuario
+    //     },
+    // };
+    // usuario.telefono();
 
-    // ************************** Función directa (sin contexto)
+    // // ************************** Función directa (sin contexto)
 
-    function mostrarThis() {
-    console.log('this en una funcion',this); // En modo no estricto: window
-    }
-    mostrarThis(); 
+    // function mostrarThis() {
+    // console.log('this en una funcion',this); // En modo no estricto: window
+    // }
+    // mostrarThis(); 
 
 // ************************** ARROW FUNCTONS
 
